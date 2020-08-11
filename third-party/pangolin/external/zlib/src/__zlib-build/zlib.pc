@@ -1,0 +1,13 @@
+prefix=D:/PCL/ext_lib/Pangolin-master/vs2013/external/zlib
+exec_prefix=D:/PCL/ext_lib/Pangolin-master/vs2013/external/zlib
+libdir=D:/PCL/ext_lib/Pangolin-master/vs2013/external/zlib/lib
+sharedlibdir=D:/PCL/ext_lib/Pangolin-master/vs2013/external/zlib/lib
+includedir=D:/PCL/ext_lib/Pangolin-master/vs2013/external/zlib/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.8
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

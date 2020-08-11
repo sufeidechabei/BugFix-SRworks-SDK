@@ -1,0 +1,9 @@
+﻿  main.cpp
+D:\SRWorks_v0.9.3.0_Native_C\C-Sample\sample-vs2015\main.cpp(120,106): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\SRWorks_v0.9.3.0_Native_C\C-Sample\sample-vs2015\main.cpp(137,99): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Generating code
+  1 of 1416 functions (<0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  ViveSR_VS2015_SampleCode.vcxproj -> D:\SRWorks_v0.9.3.0_Native_C\C-Sample\x64\Release\sample-vs2015.exe

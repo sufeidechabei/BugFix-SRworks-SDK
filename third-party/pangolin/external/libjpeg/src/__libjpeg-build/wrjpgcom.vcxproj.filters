@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg\wrjpgcom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B6CF14DA-57B9-35C1-9B8F-9AC132F860F1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

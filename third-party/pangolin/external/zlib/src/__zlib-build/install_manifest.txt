@@ -1,0 +1,7 @@
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/zlib/lib/zlibd.lib
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/zlib/bin/zlibd.dll
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/zlib/lib/zlibstaticd.lib
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/zlib/include/zconf.h
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/zlib/include/zlib.h
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/zlib/share/man/man3/zlib.3
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/zlib/share/pkgconfig/zlib.pc

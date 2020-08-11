@@ -1,0 +1,14 @@
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/lib/libpng16d.lib
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/bin/libpng16d.dll
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/lib/libpng16_staticd.lib
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/include/png.h
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/include/pngconf.h
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/include/pnglibconf.h
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/include/libpng16/png.h
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/include/libpng16/pngconf.h
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/include/libpng16/pnglibconf.h
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/share/man/man3/libpng.3
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/share/man/man3/libpngpf.3
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/share/man/man5/png.5
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/lib/libpng/libpng16.cmake
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/lib/libpng/libpng16-debug.cmake

@@ -1,0 +1,55 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "D:/PCL/ext_lib/Pangolin-master/vs2013/external/CMakeFiles/__zlib"
+		},
+		
+		{
+			"file" : "D:/PCL/ext_lib/Pangolin-master/external/CMakeLists.txt"
+		},
+		
+		{
+			"file" : "D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/3a37390eba2ea085c20a0a767a044d55/__zlib.rule"
+		},
+		
+		{
+			"file" : "D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/14fffdc0824606b0014b1e57f30bf636/__zlib-complete.rule"
+		},
+		
+		{
+			"file" : "D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/5e3cfc48a1c88fab64df553412ce413e/__zlib-install.rule"
+		},
+		
+		{
+			"file" : "D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/5e3cfc48a1c88fab64df553412ce413e/__zlib-mkdir.rule"
+		},
+		
+		{
+			"file" : "D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/5e3cfc48a1c88fab64df553412ce413e/__zlib-download.rule"
+		},
+		
+		{
+			"file" : "D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/5e3cfc48a1c88fab64df553412ce413e/__zlib-update.rule"
+		},
+		
+		{
+			"file" : "D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/5e3cfc48a1c88fab64df553412ce413e/__zlib-patch.rule"
+		},
+		
+		{
+			"file" : "D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/5e3cfc48a1c88fab64df553412ce413e/__zlib-configure.rule"
+		},
+		
+		{
+			"file" : "D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/5e3cfc48a1c88fab64df553412ce413e/__zlib-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "__zlib" ],
+		"name" : "__zlib"
+	}
+}

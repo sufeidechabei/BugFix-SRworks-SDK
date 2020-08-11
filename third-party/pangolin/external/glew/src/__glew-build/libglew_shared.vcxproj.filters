@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\glew\src\__glew\src\glew.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\glew\src\__glew\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\glew\src\__glew\build\glew.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F786FFFC-71E8-3103-9060-D0155C27BB1F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,856 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{1BD26A2C-F696-3190-A999-E1D458C71FEE}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>__libpng</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\external\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/PCL/ext_lib/Pangolin-master/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/PCL/ext_lib/Pangolin-master -BD:/PCL/ext_lib/Pangolin-master/vs2013 --check-stamp-file D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/PCL/ext_lib/Pangolin-master/external/CMakeLists.txt;D:\PCL\ext_lib\Pangolin-master\external\CMakeLists.txt;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\ExternalProject.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\glew\tmp\__glew-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\zlib\tmp\__zlib-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\tmp\__libpng-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\tmp\__libjpeg-cfgcmd.txt.in;D:\PCL\ext_lib\Pangolin-master\external\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/PCL/ext_lib/Pangolin-master/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/PCL/ext_lib/Pangolin-master -BD:/PCL/ext_lib/Pangolin-master/vs2013 --check-stamp-file D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/PCL/ext_lib/Pangolin-master/external/CMakeLists.txt;D:\PCL\ext_lib\Pangolin-master\external\CMakeLists.txt;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\ExternalProject.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\glew\tmp\__glew-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\zlib\tmp\__zlib-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\tmp\__libpng-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\tmp\__libjpeg-cfgcmd.txt.in;D:\PCL\ext_lib\Pangolin-master\external\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/PCL/ext_lib/Pangolin-master/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/PCL/ext_lib/Pangolin-master -BD:/PCL/ext_lib/Pangolin-master/vs2013 --check-stamp-file D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/PCL/ext_lib/Pangolin-master/external/CMakeLists.txt;D:\PCL\ext_lib\Pangolin-master\external\CMakeLists.txt;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\ExternalProject.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\glew\tmp\__glew-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\zlib\tmp\__zlib-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\tmp\__libpng-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\tmp\__libjpeg-cfgcmd.txt.in;D:\PCL\ext_lib\Pangolin-master\external\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/PCL/ext_lib/Pangolin-master/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/PCL/ext_lib/Pangolin-master -BD:/PCL/ext_lib/Pangolin-master/vs2013 --check-stamp-file D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/PCL/ext_lib/Pangolin-master/external/CMakeLists.txt;D:\PCL\ext_lib\Pangolin-master\external\CMakeLists.txt;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\ExternalProject.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\glew\tmp\__glew-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\zlib\tmp\__zlib-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\tmp\__libpng-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\tmp\__libjpeg-cfgcmd.txt.in;D:\PCL\ext_lib\Pangolin-master\external\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\vs2013\CMakeFiles\ddfc5ca40b6e63df5f7e1dbdd785140e\__libpng-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Creating directories for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Creating directories for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Creating directories for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\vs2013\CMakeFiles\ddfc5ca40b6e63df5f7e1dbdd785140e\__libpng-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (git clone) for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -P D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/tmp/__libpng-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-download.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\__libpng-gitinfo.txt;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing download step (git clone) for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -P D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/tmp/__libpng-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-download.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\__libpng-gitinfo.txt;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing download step (git clone) for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -P D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/tmp/__libpng-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-download.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\__libpng-gitinfo.txt;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing download step (git clone) for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -P D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/tmp/__libpng-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-download.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\__libpng-gitinfo.txt;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\vs2013\CMakeFiles\ddfc5ca40b6e63df5f7e1dbdd785140e\__libpng-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing update step for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -P D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/tmp/__libpng-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-update.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing update step for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -P D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/tmp/__libpng-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-update.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing update step for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -P D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/tmp/__libpng-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-update.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing update step for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -P D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/tmp/__libpng-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-update.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\vs2013\CMakeFiles\ddfc5ca40b6e63df5f7e1dbdd785140e\__libpng-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-patch.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No patch step for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-patch.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No patch step for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-patch.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No patch step for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-patch.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\vs2013\CMakeFiles\ddfc5ca40b6e63df5f7e1dbdd785140e\__libpng-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing configure step for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng -DZLIB_INCLUDE_DIR=D:/PCL/ext_lib/Pangolin-master/vs2013/external/zlib/include -DZLIB_LIBRARY=D:/PCL/ext_lib/Pangolin-master/vs2013/external/zlib/lib/zlibstatic*.lib "-GVisual Studio 12 2013 Win64" D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-configure.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\zlib\src\__zlib-stamp\$(Configuration)\__zlib-done;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\tmp\__libpng-cfgcmd.txt;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-update;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing configure step for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng -DZLIB_INCLUDE_DIR=D:/PCL/ext_lib/Pangolin-master/vs2013/external/zlib/include -DZLIB_LIBRARY=D:/PCL/ext_lib/Pangolin-master/vs2013/external/zlib/lib/zlibstatic*.lib "-GVisual Studio 12 2013 Win64" D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-configure.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\zlib\src\__zlib-stamp\$(Configuration)\__zlib-done;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\tmp\__libpng-cfgcmd.txt;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-update;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing configure step for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng -DZLIB_INCLUDE_DIR=D:/PCL/ext_lib/Pangolin-master/vs2013/external/zlib/include -DZLIB_LIBRARY=D:/PCL/ext_lib/Pangolin-master/vs2013/external/zlib/lib/zlibstatic*.lib "-GVisual Studio 12 2013 Win64" D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-configure.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\zlib\src\__zlib-stamp\$(Configuration)\__zlib-done;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\tmp\__libpng-cfgcmd.txt;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-update;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing configure step for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng -DZLIB_INCLUDE_DIR=D:/PCL/ext_lib/Pangolin-master/vs2013/external/zlib/include -DZLIB_LIBRARY=D:/PCL/ext_lib/Pangolin-master/vs2013/external/zlib/lib/zlibstatic*.lib "-GVisual Studio 12 2013 Win64" D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-configure.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\zlib\src\__zlib-stamp\$(Configuration)\__zlib-done;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\tmp\__libpng-cfgcmd.txt;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-update;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\vs2013\CMakeFiles\ddfc5ca40b6e63df5f7e1dbdd785140e\__libpng-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing build step for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-build.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing build step for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-build.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing build step for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" --build . --config MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-build.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing build step for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" --build . --config RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-build.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\vs2013\CMakeFiles\ddfc5ca40b6e63df5f7e1dbdd785140e\__libpng-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing install step for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" --build . --config Debug --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-install.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing install step for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" --build . --config Release --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-install.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing install step for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" --build . --config MinSizeRel --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-install.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing install step for '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" --build . --config RelWithDebInfo --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-install.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\vs2013\CMakeFiles\14fffdc0824606b0014b1e57f30bf636\__libpng-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/CMakeFiles/$(Configuration)/__libpng-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/14fffdc0824606b0014b1e57f30bf636/__libpng-complete.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-install;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-mkdir;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-download;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-update;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-patch;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-configure;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-build;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\$(Configuration)\__libpng-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Completed '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/CMakeFiles/$(Configuration)/__libpng-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/14fffdc0824606b0014b1e57f30bf636/__libpng-complete.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-install;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-mkdir;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-download;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-update;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-patch;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-configure;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-build;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\$(Configuration)\__libpng-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Completed '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/CMakeFiles/$(Configuration)/__libpng-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/14fffdc0824606b0014b1e57f30bf636/__libpng-complete.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-install;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-mkdir;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-download;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-update;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-patch;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-configure;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-build;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\$(Configuration)\__libpng-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Completed '__libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/CMakeFiles/$(Configuration)/__libpng-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libpng/src/__libpng-stamp/$(Configuration)/__libpng-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/14fffdc0824606b0014b1e57f30bf636/__libpng-complete.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-install;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-mkdir;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-download;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-update;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-patch;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-configure;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-build;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-stamp\$(Configuration)\__libpng-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\$(Configuration)\__libpng-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\vs2013\CMakeFiles\3a37390eba2ea085c20a0a767a044d55\__libpng.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/3a37390eba2ea085c20a0a767a044d55/__libpng.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\$(Configuration)\__libpng-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\__libpng</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/3a37390eba2ea085c20a0a767a044d55/__libpng.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\$(Configuration)\__libpng-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\__libpng</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/3a37390eba2ea085c20a0a767a044d55/__libpng.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\$(Configuration)\__libpng-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\__libpng</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/3a37390eba2ea085c20a0a767a044d55/__libpng.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\$(Configuration)\__libpng-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\__libpng</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\__libpng" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/PCL/ext_lib/Pangolin-master/vs2013/ZERO_CHECK.vcxproj">
+      <Project>AB683B25-4F95-392B-81C7-B3AC405D5078</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/PCL/ext_lib/Pangolin-master/vs2013/external/__zlib.vcxproj">
+      <Project>F31F0C12-2779-3018-87DE-6FE583E5B145</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

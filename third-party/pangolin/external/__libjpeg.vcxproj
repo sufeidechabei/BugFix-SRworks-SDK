@@ -1,0 +1,853 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{56203E2A-A557-3071-9646-EB4B72967C17}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>__libjpeg</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\external\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/PCL/ext_lib/Pangolin-master/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/PCL/ext_lib/Pangolin-master -BD:/PCL/ext_lib/Pangolin-master/vs2013 --check-stamp-file D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/PCL/ext_lib/Pangolin-master/external/CMakeLists.txt;D:\PCL\ext_lib\Pangolin-master\external\CMakeLists.txt;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\ExternalProject.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\glew\tmp\__glew-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\zlib\tmp\__zlib-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\tmp\__libpng-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\tmp\__libjpeg-cfgcmd.txt.in;D:\PCL\ext_lib\Pangolin-master\external\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/PCL/ext_lib/Pangolin-master/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/PCL/ext_lib/Pangolin-master -BD:/PCL/ext_lib/Pangolin-master/vs2013 --check-stamp-file D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/PCL/ext_lib/Pangolin-master/external/CMakeLists.txt;D:\PCL\ext_lib\Pangolin-master\external\CMakeLists.txt;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\ExternalProject.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\glew\tmp\__glew-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\zlib\tmp\__zlib-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\tmp\__libpng-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\tmp\__libjpeg-cfgcmd.txt.in;D:\PCL\ext_lib\Pangolin-master\external\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/PCL/ext_lib/Pangolin-master/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/PCL/ext_lib/Pangolin-master -BD:/PCL/ext_lib/Pangolin-master/vs2013 --check-stamp-file D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/PCL/ext_lib/Pangolin-master/external/CMakeLists.txt;D:\PCL\ext_lib\Pangolin-master\external\CMakeLists.txt;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\ExternalProject.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\glew\tmp\__glew-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\zlib\tmp\__zlib-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\tmp\__libpng-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\tmp\__libjpeg-cfgcmd.txt.in;D:\PCL\ext_lib\Pangolin-master\external\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/PCL/ext_lib/Pangolin-master/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/PCL/ext_lib/Pangolin-master -BD:/PCL/ext_lib/Pangolin-master/vs2013 --check-stamp-file D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/PCL/ext_lib/Pangolin-master/external/CMakeLists.txt;D:\PCL\ext_lib\Pangolin-master\external\CMakeLists.txt;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\ExternalProject.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\glew\tmp\__glew-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\zlib\tmp\__zlib-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\tmp\__libpng-cfgcmd.txt.in;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindGit.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\RepositoryInfo.txt.in;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\tmp\__libjpeg-cfgcmd.txt.in;D:\PCL\ext_lib\Pangolin-master\external\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\vs2013\CMakeFiles\45459f10c6bae92bbce311fa07944eed\__libjpeg-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Creating directories for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Creating directories for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Creating directories for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\vs2013\CMakeFiles\45459f10c6bae92bbce311fa07944eed\__libjpeg-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (git clone) for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -P D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/tmp/__libjpeg-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-download.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\__libjpeg-gitinfo.txt;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing download step (git clone) for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -P D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/tmp/__libjpeg-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-download.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\__libjpeg-gitinfo.txt;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing download step (git clone) for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -P D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/tmp/__libjpeg-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-download.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\__libjpeg-gitinfo.txt;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing download step (git clone) for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -P D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/tmp/__libjpeg-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-download.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\__libjpeg-gitinfo.txt;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\vs2013\CMakeFiles\45459f10c6bae92bbce311fa07944eed\__libjpeg-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing update step for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -P D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/tmp/__libjpeg-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-update.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing update step for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -P D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/tmp/__libjpeg-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-update.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing update step for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -P D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/tmp/__libjpeg-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-update.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing update step for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -P D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/tmp/__libjpeg-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-update.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\vs2013\CMakeFiles\45459f10c6bae92bbce311fa07944eed\__libjpeg-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-patch.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No patch step for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-patch.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No patch step for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-patch.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No patch step for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-patch.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\vs2013\CMakeFiles\45459f10c6bae92bbce311fa07944eed\__libjpeg-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing configure step for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg -DBUILD_SHARED_LIBS=false "-GVisual Studio 12 2013 Win64" D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-configure.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\tmp\__libjpeg-cfgcmd.txt;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-update;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing configure step for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg -DBUILD_SHARED_LIBS=false "-GVisual Studio 12 2013 Win64" D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-configure.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\tmp\__libjpeg-cfgcmd.txt;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-update;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing configure step for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg -DBUILD_SHARED_LIBS=false "-GVisual Studio 12 2013 Win64" D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-configure.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\tmp\__libjpeg-cfgcmd.txt;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-update;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing configure step for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg -DBUILD_SHARED_LIBS=false "-GVisual Studio 12 2013 Win64" D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-configure.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\tmp\__libjpeg-cfgcmd.txt;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-update;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\vs2013\CMakeFiles\45459f10c6bae92bbce311fa07944eed\__libjpeg-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing build step for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-build.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing build step for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-build.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing build step for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" --build . --config MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-build.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing build step for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" --build . --config RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-build.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\vs2013\CMakeFiles\45459f10c6bae92bbce311fa07944eed\__libjpeg-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing install step for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" --build . --config Debug --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-install.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing install step for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" --build . --config Release --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-install.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing install step for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" --build . --config MinSizeRel --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-install.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing install step for '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" --build . --config RelWithDebInfo --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-install.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\vs2013\CMakeFiles\14fffdc0824606b0014b1e57f30bf636\__libjpeg-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/CMakeFiles/$(Configuration)/__libjpeg-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/14fffdc0824606b0014b1e57f30bf636/__libjpeg-complete.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-install;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-mkdir;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-download;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-update;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-patch;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-configure;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-build;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\$(Configuration)\__libjpeg-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Completed '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/CMakeFiles/$(Configuration)/__libjpeg-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/14fffdc0824606b0014b1e57f30bf636/__libjpeg-complete.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-install;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-mkdir;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-download;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-update;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-patch;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-configure;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-build;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\$(Configuration)\__libjpeg-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Completed '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/CMakeFiles/$(Configuration)/__libjpeg-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/14fffdc0824606b0014b1e57f30bf636/__libjpeg-complete.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-install;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-mkdir;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-download;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-update;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-patch;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-configure;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-build;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\$(Configuration)\__libjpeg-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Completed '__libjpeg'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/PCL/ext_lib/Pangolin-master/vs2013/external/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/CMakeFiles/$(Configuration)/__libjpeg-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E touch D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-stamp/$(Configuration)/__libjpeg-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/14fffdc0824606b0014b1e57f30bf636/__libjpeg-complete.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-install;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-mkdir;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-download;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-update;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-patch;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-configure;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-build;D:\PCL\ext_lib\Pangolin-master\vs2013\external\libjpeg\src\__libjpeg-stamp\$(Configuration)\__libjpeg-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\$(Configuration)\__libjpeg-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\vs2013\CMakeFiles\3a37390eba2ea085c20a0a767a044d55\__libjpeg.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/3a37390eba2ea085c20a0a767a044d55/__libjpeg.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\$(Configuration)\__libjpeg-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\__libjpeg</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/3a37390eba2ea085c20a0a767a044d55/__libjpeg.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\$(Configuration)\__libjpeg-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\__libjpeg</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/3a37390eba2ea085c20a0a767a044d55/__libjpeg.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\$(Configuration)\__libjpeg-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\__libjpeg</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/3a37390eba2ea085c20a0a767a044d55/__libjpeg.rule;D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\$(Configuration)\__libjpeg-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\__libjpeg</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\CMakeFiles\__libjpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/PCL/ext_lib/Pangolin-master/vs2013/ZERO_CHECK.vcxproj">
+      <Project>AB683B25-4F95-392B-81C7-B3AC405D5078</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng\png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng\pngerror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng\pngget.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng\pngmem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng\pngpread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng\pngread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng\pngrio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng\pngrtran.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng\pngrutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng\pngset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng\pngtrans.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng\pngwio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng\pngwrite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng\pngwtran.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng\pngwutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng\png.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng\pngconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng-build\pnglibconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng\pngdebug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng\pnginfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng\pngpriv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng\pngstruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\libpng\src\__libpng\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{D20EC9F7-EB58-3243-A8A1-630045D76A49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{02B404FD-8808-3384-81A6-107E762A257C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

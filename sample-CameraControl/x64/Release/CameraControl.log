@@ -1,0 +1,72 @@
+﻿  main_CameraControl.cpp
+D:\SRWorks_v0.9.3.0_Native_C\C-Sample\sample-vs2015_CameraControl\main_CameraControl.cpp(273,37): warning C4473: 'fprintf' : not enough arguments passed for format string
+D:\SRWorks_v0.9.3.0_Native_C\C-Sample\sample-vs2015_CameraControl\main_CameraControl.cpp(273,37): message : placeholders and their parameters expect 3 variadic arguments, but 2 were provided
+D:\SRWorks_v0.9.3.0_Native_C\C-Sample\sample-vs2015_CameraControl\main_CameraControl.cpp(273,37): message : the missing variadic argument 3 is required by format string '%s'
+D:\SRWorks_v0.9.3.0_Native_C\C-Sample\sample-vs2015_CameraControl\main_CameraControl.cpp(276,37): warning C4473: 'fprintf' : not enough arguments passed for format string
+D:\SRWorks_v0.9.3.0_Native_C\C-Sample\sample-vs2015_CameraControl\main_CameraControl.cpp(276,37): message : placeholders and their parameters expect 3 variadic arguments, but 2 were provided
+D:\SRWorks_v0.9.3.0_Native_C\C-Sample\sample-vs2015_CameraControl\main_CameraControl.cpp(276,37): message : the missing variadic argument 3 is required by format string '%s'
+D:\SRWorks_v0.9.3.0_Native_C\C-Sample\sample-vs2015_CameraControl\main_CameraControl.cpp(279,37): warning C4473: 'fprintf' : not enough arguments passed for format string
+D:\SRWorks_v0.9.3.0_Native_C\C-Sample\sample-vs2015_CameraControl\main_CameraControl.cpp(279,37): message : placeholders and their parameters expect 3 variadic arguments, but 2 were provided
+D:\SRWorks_v0.9.3.0_Native_C\C-Sample\sample-vs2015_CameraControl\main_CameraControl.cpp(279,37): message : the missing variadic argument 3 is required by format string '%s'
+D:\SRWorks_v0.9.3.0_Native_C\C-Sample\sample-vs2015_CameraControl\main_CameraControl.cpp(392,12): warning C4244: '=': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=float
+          ]
+D:\SRWorks_v0.9.3.0_Native_C\C-Sample\sample-vs2015_CameraControl\main_CameraControl.cpp(395,36): warning C4244: '=': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=float
+          ]
+D:\SRWorks_v0.9.3.0_Native_C\C-Sample\sample-vs2015_CameraControl\main_CameraControl.cpp(399,12): warning C4244: '=': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=float
+          ]
+D:\SRWorks_v0.9.3.0_Native_C\C-Sample\sample-vs2015_CameraControl\main_CameraControl.cpp(617,27): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\SRWorks_v0.9.3.0_Native_C\C-Sample\sample-vs2015_CameraControl\main_CameraControl.cpp(642,72): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+D:\SRWorks_v0.9.3.0_Native_C\C-Sample\sample-vs2015_CameraControl\main_CameraControl.cpp(642,56): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+D:\SRWorks_v0.9.3.0_Native_C\C-Sample\sample-vs2015_CameraControl\main_CameraControl.cpp(643,56): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+D:\SRWorks_v0.9.3.0_Native_C\C-Sample\sample-vs2015_CameraControl\main_CameraControl.cpp(643,40): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+D:\SRWorks_v0.9.3.0_Native_C\C-Sample\sample-vs2015_CameraControl\main_CameraControl.cpp(647,71): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+D:\SRWorks_v0.9.3.0_Native_C\C-Sample\sample-vs2015_CameraControl\main_CameraControl.cpp(647,55): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+D:\SRWorks_v0.9.3.0_Native_C\C-Sample\sample-vs2015_CameraControl\main_CameraControl.cpp(648,56): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+D:\SRWorks_v0.9.3.0_Native_C\C-Sample\sample-vs2015_CameraControl\main_CameraControl.cpp(648,40): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+  Generating code
+  8 of 459 functions ( 1.7%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  CameraControl.vcxproj -> D:\SRWorks_v0.9.3.0_Native_C\C-Sample\x64\Release\sample-CameraControl.exe

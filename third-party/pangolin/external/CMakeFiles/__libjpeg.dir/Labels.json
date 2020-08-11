@@ -1,0 +1,55 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "D:/PCL/ext_lib/Pangolin-master/vs2013/external/CMakeFiles/__libjpeg"
+		},
+		
+		{
+			"file" : "D:/PCL/ext_lib/Pangolin-master/external/CMakeLists.txt"
+		},
+		
+		{
+			"file" : "D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/3a37390eba2ea085c20a0a767a044d55/__libjpeg.rule"
+		},
+		
+		{
+			"file" : "D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/14fffdc0824606b0014b1e57f30bf636/__libjpeg-complete.rule"
+		},
+		
+		{
+			"file" : "D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-install.rule"
+		},
+		
+		{
+			"file" : "D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-mkdir.rule"
+		},
+		
+		{
+			"file" : "D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-download.rule"
+		},
+		
+		{
+			"file" : "D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-update.rule"
+		},
+		
+		{
+			"file" : "D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-patch.rule"
+		},
+		
+		{
+			"file" : "D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-configure.rule"
+		},
+		
+		{
+			"file" : "D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/45459f10c6bae92bbce311fa07944eed/__libjpeg-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "__libjpeg" ],
+		"name" : "__libjpeg"
+	}
+}

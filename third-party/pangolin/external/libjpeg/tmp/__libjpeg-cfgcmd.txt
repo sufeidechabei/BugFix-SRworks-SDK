@@ -1,0 +1,1 @@
+cmd='C:/Program Files (x86)/CMake/bin/cmake.exe;-DCMAKE_INSTALL_PREFIX=D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg;-DBUILD_SHARED_LIBS=false;-GVisual Studio 12 2013 Win64;D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg'

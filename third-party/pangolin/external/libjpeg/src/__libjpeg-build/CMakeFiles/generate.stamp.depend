@@ -1,0 +1,23 @@
+# CMake generation dependency list for this directory.
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg/CMakeLists.txt
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-build/CMakeFiles/3.5.2/CMakeSystem.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeSystemSpecificInitialize.cmake
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-build/CMakeFiles/3.5.2/CMakeCCompiler.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeGenericSystem.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/Platform/Windows.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/Platform/WindowsPaths.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeCInformation.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeLanguageInformation.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/Platform/Windows-MSVC.cmake
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg-build/CMakeFiles/3.5.2/CMakeRCCompiler.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeRCInformation.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeCommonLanguageInclude.cmake
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg/cmake/dist.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CPack.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CPackComponent.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Templates/CPackConfig.cmake.in
+C:/Program Files (x86)/CMake/share/cmake-3.5/Templates/CPackConfig.cmake.in
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CheckIncludeFile.cmake
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/libjpeg/src/__libjpeg/jconfig.h.cmake

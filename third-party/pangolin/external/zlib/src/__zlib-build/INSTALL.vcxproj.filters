@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\PCL\ext_lib\Pangolin-master\vs2013\external\zlib\src\__zlib-build\CMakeFiles\0e5925e4482d57c2ee5b6f6b2e02d41e\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{84BF18B7-2194-3D5B-9C6C-0E86FB57DB57}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

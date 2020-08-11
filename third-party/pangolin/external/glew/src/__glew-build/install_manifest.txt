@@ -1,0 +1,8 @@
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/glew/lib/glewd.lib
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/glew/lib/libglew_sharedd.lib
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/glew/lib/glewd.dll
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/glew/include/GL/glew.h
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/glew/include/GL/glxew.h
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/glew/include/GL/wglew.h
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/glew/bin/glewinfo.exe
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/glew/bin/visualinfo.exe

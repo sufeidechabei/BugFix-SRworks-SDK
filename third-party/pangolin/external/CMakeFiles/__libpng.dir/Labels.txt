@@ -1,0 +1,14 @@
+# Target labels
+ __libpng
+# Source files and their labels
+D:/PCL/ext_lib/Pangolin-master/vs2013/external/CMakeFiles/__libpng
+D:/PCL/ext_lib/Pangolin-master/external/CMakeLists.txt
+D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/3a37390eba2ea085c20a0a767a044d55/__libpng.rule
+D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/14fffdc0824606b0014b1e57f30bf636/__libpng-complete.rule
+D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-install.rule
+D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-mkdir.rule
+D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-download.rule
+D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-update.rule
+D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-patch.rule
+D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-configure.rule
+D:/PCL/ext_lib/Pangolin-master/vs2013/CMakeFiles/ddfc5ca40b6e63df5f7e1dbdd785140e/__libpng-build.rule
